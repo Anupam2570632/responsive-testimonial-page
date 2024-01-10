@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sora', sans-serif;
+}
+html, body{
+    background-color: #D4D4D8;
+}
+
+.container{
+    max-width: 1280px;
+    width: 80%;
+    margin: 7% auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+}
+.viewers-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 50%;
+}
+.star-icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #c5aa64;
+    font-size: 1.6rem;
+}
+
+.viewers-section h1{
+    font-size: 2.25rem;
+    color: #18181B;
+}
+.viewers-section p{
+    font-size: 1.25rem;
+    color: #52525A;
+}
+.viewers-section ul>li{
+    font-size: .875rem;
+    list-style: none;
+    color: #52525A;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.rating-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 50%;
+}
+
+.name h3{
+    font-size: 1.25rem;
+    color: #18181B;
+}
+.card-feedback p{
+    font-size: 1rem;
+    color: #52525A;
+}
+.card1, .card2{
+    display: flex;
+    flex-direction: column;
+    gap: .875rem;
+    width: 70%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 3%;
+}
+.card-header{
+    display: flex;
+    align-items: center;
+}
+.card-header img{
+    margin-right: 1rem;
+    width: 20%;
+}
+.card1{
+    margin-left: auto;
+}
+
+@media screen and (max-width: 640px) {
+    .container{
+        flex-direction: column;
+    }
+    .viewers-section{
+        width: 100%;
+    }
+    .rating-section{
+        width: 100%;
+    }
+}
